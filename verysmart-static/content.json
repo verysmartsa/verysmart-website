@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "updatedAt": "",
+  "visibility": {
+    "topbar": true,
+    "hero": true,
+    "stats": true,
+    "services": true,
+    "about": true,
+    "features": true,
+    "products": true,
+    "projects": true,
+    "why": true,
+    "contact": true,
+    "footer": true
+  },
+  "brand": {
+    "phone": "+966570914700",
+    "whatsapp": "966570914700",
+    "email": "info@verysmart.sa",
+    "instagram": "verysmart.sa",
+    "tiktok": "verysmart.sa",
+    "domain": "verysmart.sa",
+    "address": { "ar": "الرياض، المملكة العربية السعودية", "en": "Riyadh, Saudi Arabia" },
+    "hours": { "ar": "السبت – الخميس · 9 ص – 10 م", "en": "Sat – Thu · 9 AM – 10 PM" }
+  },
+  "hero": {
+    "eyebrow":  { "ar": "الرائد في أنظمة المنزل الذكي بالمملكة", "en": "Saudi Arabia's Premier Smart Home Integrator" },
+    "title1":   { "ar": "منزلك الذكي", "en": "Your Smart Home" },
+    "title2":   { "ar": "يستحق الأفضل", "en": "Deserves The Best" },
+    "desc":     { "ar": "في Very Smart، نحوّل منزلك إلى تحفة تقنية فاخرة — إضاءة، صوتيات، أمن، وتحكم كامل بلمسة واحدة أو بصوتك.", "en": "At Very Smart, we transform your home into a luxury tech masterpiece — lighting, audio, security, and full control with a single touch or your voice." },
+    "cta1":     { "ar": "احجز استشارة مجانية", "en": "Book Free Consultation" },
+    "cta2":     { "ar": "تعرف على باقاتنا", "en": "Explore Our Packages" }
+  },
+  "stats": [
+    { "id": "s1", "num": "+500", "icon": "users",    "label": { "ar": "عميل سعيد",      "en": "Happy Clients" } },
+    { "id": "s2", "num": "+250", "icon": "building", "label": { "ar": "مشروع مكتمل",     "en": "Projects Done" } },
+    { "id": "s3", "num": "+5",   "icon": "award",    "label": { "ar": "سنوات خبرة",      "en": "Years Experience" } },
+    { "id": "s4", "num": "24/7", "icon": "headset",  "label": { "ar": "دعم فني",         "en": "Support" } }
+  ],
+  "sectionTitles": {
+    "services": {
+      "tag":   { "ar": "خدماتنا",                "en": "Our Services" },
+      "title": { "ar": "حلول ذكية لمستقبل أفضل", "en": "Smart Solutions For A Better Future" },
+      "sub":   { "ar": "نقدم حلول متكاملة تجمع بين الجودة والتقنية لتناسب احتياجاتك وتجعل حياتك أكثر راحة وأماناً.", "en": "Integrated solutions combining quality and technology for your comfort, safety, and lifestyle." }
+    },
+    "features": {
+      "tag":   { "ar": "مميزات المنزل الذكي",    "en": "Smart Home Features" },
+      "title": { "ar": "تحكم كامل بلمسة واحدة",  "en": "Total Control, One Touch" },
+      "sub":   { "ar": "تقنيات عالمية تجعل حياتك أسهل، أأمن، وأكثر فخامة.", "en": "World-class technology that makes life easier, safer, and more luxurious." }
+    },
+    "products": {
+      "tag":   { "ar": "منتجاتنا",               "en": "Our Products" },
+      "title": { "ar": "منتجات أصلية بضمان شامل", "en": "Genuine Products with Full Warranty" },
+      "sub":   { "ar": "أحدث منتجات المنزل الذكي من أفضل العلامات العالمية. اضغط للاستفسار.", "en": "Latest smart home products from the world's best brands. Tap to inquire." }
+    },
+    "projects": {
+      "tag":   { "ar": "مشاريعنا",                  "en": "Our Projects" },
+      "title": { "ar": "فلل وقصور تحوّلت إلى تحف ذكية", "en": "Villas & Palaces Transformed Into Smart Masterpieces" },
+      "sub":   { "ar": "نخبة من أحدث مشاريعنا في الرياض، جدة، والخبر.", "en": "A selection of our latest projects in Riyadh, Jeddah, and Khobar." }
+    },
+    "why": {
+      "tag":   { "ar": "لماذا نحن",                "en": "Why Us" },
+      "title": { "ar": "لماذا تختار Very Smart ؟", "en": "Why Choose Very Smart?" },
+      "sub":   { "ar": "لأن منزلك يستحق ما هو أبعد من العادي.", "en": "Because your home deserves beyond ordinary." }
+    },
+    "about": {
+      "tag":   { "ar": "من نحن", "en": "About Us" },
+      "title": { "ar": "نحوّل البيوت إلى تجارب ذكية", "en": "We Turn Houses Into Smart Experiences" },
+      "p1":    { "ar": "Very Smart شركة سعودية متخصصة في مقاولات الكهرباء وتصميم وتنفيذ أنظمة المنزل الذكي الفاخرة.", "en": "Very Smart is a Saudi company specialized in electrical contracting and luxury smart home systems." },
+      "p2":    { "ar": "فريقنا يضم مهندسين معتمدين على أحدث أنظمة KNX، Control4، Crestron — لنقدّم لك حلولاً موثوقة، أنيقة.", "en": "Our certified engineers work with KNX, Control4, Crestron — delivering reliable, elegant, and future-proof solutions." }
+    },
+    "contact": {
+      "tag":   { "ar": "تواصل معنا",              "en": "Contact Us" },
+      "title": { "ar": "جاهزون لتحويل منزلك",    "en": "Ready To Transform Your Home" },
+      "sub":   { "ar": "استشارة مجانية خلال 24 ساعة. أرسل لنا تفاصيلك وسنعاود الاتصال.", "en": "Free consultation within 24 hours. Send your details and we'll get back to you." }
+    }
+  },
+  "services": [
+    { "id": "sv1", "icon": "shield",     "title": { "ar": "أنظمة الأمن والمراقبة", "en": "Security & Surveillance" }, "desc": { "ar": "كاميرات مراقبة، أنظمة إنذار، تحكم بالدخول والخروج وحماية متكاملة.", "en": "HD cameras, alarms, access control, and full protection." } },
+    { "id": "sv2", "icon": "bulb",       "title": { "ar": "التحكم بالإضاءة",     "en": "Lighting Control" }, "desc": { "ar": "إضاءة ذكية قابلة للتحكم عن بعد وتوفير الطاقة والمشاهد المخصصة.", "en": "Remote-controlled smart lighting with energy savings and scenes." } },
+    { "id": "sv3", "icon": "speaker",    "title": { "ar": "أنظمة الصوت",        "en": "Audio Systems" }, "desc": { "ar": "تجربة صوتية محيطية عالية الجودة في جميع أنحاء المنزل.", "en": "High-quality surround audio throughout your home." } },
+    { "id": "sv4", "icon": "home",       "title": { "ar": "التحكم المركزي",     "en": "Central Control" }, "desc": { "ar": "تحكم بجميع أجهزة المنزل الذكي من تطبيق واحد وبسهولة تامة.", "en": "Control every smart device from one elegant app." } },
+    { "id": "sv5", "icon": "climate",    "title": { "ar": "التحكم بالمناخ",     "en": "Climate Control" }, "desc": { "ar": "تحكم ذكي بالتكييف والتدفئة لراحة مثالية وتوفير في الطاقة.", "en": "Smart HVAC for ideal comfort and energy savings." } },
+    { "id": "sv6", "icon": "gear",       "title": { "ar": "حلول مخصصة",         "en": "Custom Solutions" }, "desc": { "ar": "نصمم حلول ذكية مخصصة تناسب احتياجاتك ونمط حياتك.", "en": "Tailored smart solutions that fit your lifestyle." } }
+  ],
+  "features": [
+    { "id": "f1", "icon": "bulb",     "title": { "ar": "إضاءة ذكية",      "en": "Smart Lighting" },     "desc": { "ar": "سيناريوهات لانهائية بألوان ودرجات تناسب كل لحظة.", "en": "Infinite scenes with custom colors and dimming." } },
+    { "id": "f2", "icon": "blinds",   "title": { "ar": "ستائر آلية",      "en": "Motorized Blinds" },   "desc": { "ar": "فتح وإغلاق برمجي حسب الوقت أو الإضاءة الطبيعية.", "en": "Auto open/close by time or daylight." } },
+    { "id": "f3", "icon": "climate",  "title": { "ar": "تكييف ذكي",       "en": "Smart Climate" },      "desc": { "ar": "تحكم بالحرارة في كل غرفة وتوفير في الفاتورة حتى 30%.", "en": "Per-room temperature. Save up to 30% on bills." } },
+    { "id": "f4", "icon": "mic",      "title": { "ar": "تحكم صوتي",       "en": "Voice Control" },      "desc": { "ar": "Alexa, Google, Siri — تحكم بكل شيء بصوتك.", "en": "Alexa, Google, Siri — control everything by voice." } },
+    { "id": "f5", "icon": "camera",   "title": { "ar": "كاميرات 4K",      "en": "4K Cameras" },         "desc": { "ar": "مراقبة مباشرة من أي مكان مع تخزين سحابي آمن.", "en": "Live monitoring with secure cloud storage." } },
+    { "id": "f6", "icon": "phone",    "title": { "ar": "تطبيق موحّد",      "en": "Unified App" },        "desc": { "ar": "كل أنظمة منزلك في تطبيق أنيق وسهل.", "en": "Every system in one elegant, easy app." } },
+    { "id": "f7", "icon": "shield",   "title": { "ar": "إنذار وأمن",       "en": "Alarm & Security" },   "desc": { "ar": "تنبيهات فورية وتكامل مع شركات الحراسة.", "en": "Instant alerts and monitoring integrations." } },
+    { "id": "f8", "icon": "bolt",     "title": { "ar": "سيناريوهات ذكية",  "en": "Smart Scenes" },       "desc": { "ar": "وضع النوم، وضع الخروج، وضع السينما بضغطة.", "en": "Sleep, Away, Cinema modes in one tap." } }
+  ],
+  "products": [
+    { "id": "p1", "category": { "ar": "شاشات تحكم", "en": "Control Panels" }, "name": { "ar": "شاشة تحكم مركزية", "en": "Central Touch Panel" }, "desc": { "ar": "شاشة لمس فاخرة لإدارة جميع أنظمة منزلك.", "en": "Luxury touchscreen to manage all your home systems." }, "image": "" },
+    { "id": "p2", "category": { "ar": "أمن ومراقبة", "en": "Security" }, "name": { "ar": "كاميرا 4K ذكية", "en": "4K Smart Camera" }, "desc": { "ar": "رؤية ليلية، رصد حركة، وتخزين سحابي.", "en": "Night vision, motion alerts, cloud storage." }, "image": "" },
+    { "id": "p3", "category": { "ar": "إضاءة", "en": "Lighting" }, "name": { "ar": "مفتاح إضاءة ذكي", "en": "Smart Light Switch" }, "desc": { "ar": "تحكم باللمس والصوت بكل إضاءة في المنزل.", "en": "Touch + voice control for every light." }, "image": "" },
+    { "id": "p4", "category": { "ar": "صوتيات", "en": "Audio" }, "name": { "ar": "مكبر صوت سقفي", "en": "In-Ceiling Speaker" }, "desc": { "ar": "صوت Hi-Fi نقي يغمر كل غرفة بسلاسة.", "en": "Pure Hi-Fi sound." }, "image": "" },
+    { "id": "p5", "category": { "ar": "مناخ", "en": "Climate" }, "name": { "ar": "منظّم حرارة ذكي", "en": "Smart Thermostat" }, "desc": { "ar": "يتعلم عاداتك ويوفّر حتى 30% من فاتورة الكهرباء.", "en": "Learns your habits. Saves up to 30%." }, "image": "" },
+    { "id": "p6", "category": { "ar": "أمن", "en": "Security" }, "name": { "ar": "قفل ذكي للأبواب", "en": "Smart Door Lock" }, "desc": { "ar": "دخول ببصمة، رمز، أو من التطبيق عن بُعد.", "en": "Fingerprint, code, or remote access." }, "image": "" },
+    { "id": "p7", "category": { "ar": "ستائر", "en": "Blinds" }, "name": { "ar": "موتور ستائر ذكي", "en": "Smart Blind Motor" }, "desc": { "ar": "تحكم لاسلكي بكل ستائر منزلك بصمت تام.", "en": "Wireless silent control of all blinds." }, "image": "" },
+    { "id": "p8", "category": { "ar": "حساسات", "en": "Sensors" }, "name": { "ar": "حساسات الحركة والوجود", "en": "Motion & Presence Sensors" }, "desc": { "ar": "أتمتة كاملة تتفاعل مع وجودك في كل غرفة.", "en": "Full automation reacting to your presence." }, "image": "" }
+  ],
+  "projects": [
+    { "id": "pr1", "tag": { "ar": "فيلا فاخرة", "en": "Luxury Villa" }, "name": { "ar": "فيلا الياسمين",    "en": "Yasmin Villa" },    "location": { "ar": "الرياض — حي الياسمين", "en": "Riyadh — Al Yasmin" }, "meta": { "ar": "420م² · 14 غرفة", "en": "420m² · 14 rooms" }, "image": "" },
+    { "id": "pr2", "tag": { "ar": "قصر",        "en": "Palace" },      "name": { "ar": "قصر الواجهة",      "en": "Corniche Palace" }, "location": { "ar": "جدة — الكورنيش",       "en": "Jeddah — Corniche" }, "meta": { "ar": "780م² · 22 غرفة", "en": "780m² · 22 rooms" }, "image": "" },
+    { "id": "pr3", "tag": { "ar": "شاليه",      "en": "Chalet" },      "name": { "ar": "شاليه السيف",      "en": "Saif Chalet" },     "location": { "ar": "الخبر — نصف القمر",    "en": "Khobar — Half Moon" }, "meta": { "ar": "300م² · 9 غرف",  "en": "300m² · 9 rooms" }, "image": "" },
+    { "id": "pr4", "tag": { "ar": "تجاري",      "en": "Commercial" },  "name": { "ar": "مكتب الإدارة",     "en": "Admin Office" },    "location": { "ar": "الرياض — العليا",      "en": "Riyadh — Olaya" }, "meta": { "ar": "650م² · 3 طوابق", "en": "650m² · 3 floors" }, "image": "" },
+    { "id": "pr5", "tag": { "ar": "استراحة",    "en": "Resort" },      "name": { "ar": "استراحة النخيل",   "en": "Palms Retreat" },   "location": { "ar": "الرياض — العمارية",    "en": "Riyadh — Ammariyah" }, "meta": { "ar": "900م² · مسبح + مسرح", "en": "900m² · pool + theater" }, "image": "" },
+    { "id": "pr6", "tag": { "ar": "فيلا",       "en": "Villa" },       "name": { "ar": "فيلا الروابي",     "en": "Rawabi Villa" },    "location": { "ar": "الرياض — الروابي",     "en": "Riyadh — Al Rawabi" }, "meta": { "ar": "380م² · 12 غرفة", "en": "380m² · 12 rooms" }, "image": "" }
+  ],
+  "why": [
+    { "id": "w1", "icon": "award",  "title": { "ar": "جودة عالية",  "en": "High Quality" },     "desc": { "ar": "نستخدم أفضل المنتجات وأحدث التقنيات العالمية المعتمدة.", "en": "We use the best products and the latest certified technologies." } },
+    { "id": "w2", "icon": "users",  "title": { "ar": "فريق محترف",  "en": "Pro Team" },         "desc": { "ar": "مهندسون وفنيون بخبرة عالية لتنفيذ مشاريعك بدقة.", "en": "Highly experienced engineers and technicians." } },
+    { "id": "w3", "icon": "shield", "title": { "ar": "ضمان شامل",   "en": "Full Warranty" },    "desc": { "ar": "ضمان على جميع أعمالنا ومنتجاتنا حتى 5 سنوات.", "en": "Up to 5-year warranty on all work and products." } },
+    { "id": "w4", "icon": "headset","title": { "ar": "دعم مستمر",   "en": "Ongoing Support" },  "desc": { "ar": "دعم فني متواصل على مدار الساعة طوال الأسبوع.", "en": "Round-the-clock technical support, all week." } }
+  ]
+}

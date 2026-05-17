@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="robots" content="noindex,nofollow" />
+<title>تسجيل الدخول · Very Smart Admin</title>
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet" />
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  body{
+    margin:0;font-family:'Tajawal',sans-serif;min-height:100vh;
+    display:flex;align-items:center;justify-content:center;padding:20px;
+    background:linear-gradient(135deg,#0E1F3D 0%,#1B3B6F 50%,#08152C 100%);
+    color:#fff;position:relative;overflow:hidden;
+  }
+  body::before{
+    content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(circle at 20% 20%,rgba(232,132,43,.2),transparent 40%),
+      radial-gradient(circle at 80% 80%,rgba(27,95,191,.25),transparent 40%);
+    pointer-events:none;
+  }
+  body::after{
+    content:"";position:absolute;inset:0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+    background-size:40px 40px;
+    mask-image:radial-gradient(ellipse at center,black 40%,transparent 70%);
+    pointer-events:none;
+  }
+  .card{
+    position:relative;width:100%;max-width:440px;padding:48px 36px;
+    background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
+    backdrop-filter:blur(20px);border-radius:24px;
+    box-shadow:0 40px 80px -20px rgba(0,0,0,.5);
+  }
+  .logo{display:flex;justify-content:center;margin-bottom:8px}
+  .logo img{height:70px}
+  h1{text-align:center;font-size:22px;font-weight:800;margin:18px 0 8px}
+  .sub{text-align:center;font-size:14px;color:rgba(255,255,255,.6);margin:0 0 32px}
+  form{display:grid;gap:16px}
+  label{font-size:13px;color:rgba(255,255,255,.8);font-weight:600;display:block;margin-bottom:6px}
+  input{
+    width:100%;padding:14px 16px;border-radius:12px;border:1.5px solid rgba(255,255,255,.15);
+    background:rgba(255,255,255,.06);color:#fff;font:inherit;font-size:15px;
+    transition:.2s;
+  }
+  input:focus{outline:none;border-color:#E8842B;background:rgba(255,255,255,.1);box-shadow:0 0 0 4px rgba(232,132,43,.15)}
+  input::placeholder{color:rgba(255,255,255,.4)}
+  button{
+    padding:14px 20px;border-radius:12px;border:0;cursor:pointer;
+    background:linear-gradient(135deg,#E8842B,#C96E1A);
+    color:#fff;font:inherit;font-weight:700;font-size:15px;
+    transition:.2s;
+  }
+  button:hover{transform:translateY(-2px);box-shadow:0 10px 25px -8px rgba(232,132,43,.6)}
+  button:active{transform:translateY(0)}
+  button:disabled{opacity:.6;cursor:not-allowed;transform:none}
+  .err{
+    background:rgba(239,68,68,.15);border:1px solid rgba(239,68,68,.3);
+    color:#FCA5A5;padding:10px 14px;border-radius:10px;font-size:13.5px;
+    display:none;
+  }
+  .err.show{display:block}
+  .footer-note{text-align:center;font-size:12px;color:rgba(255,255,255,.4);margin-top:24px}
+  .footer-note a{color:rgba(255,255,255,.7);text-decoration:none}
+  .footer-note a:hover{color:#E8842B}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo"><img src="../assets/logo.svg" alt="Very Smart"/></div>
+  <h1>لوحة التحكم</h1>
+  <p class="sub">سجّل دخولك لإدارة محتوى الموقع</p>
+
+  <form id="loginForm">
+    <div>
+      <label for="pw">كلمة المرور</label>
+      <input id="pw" type="password" name="password" autocomplete="current-password" placeholder="••••••••" required autofocus />
+    </div>
+    <div class="err" id="err"></div>
+    <button type="submit" id="submitBtn">دخول</button>
+  </form>
+
+  <div class="footer-note">
+    تمت الحماية بكلمة مرور. <a href="../">العودة للموقع</a>
+  </div>
+</div>
+
+<script>
+const form = document.getElementById('loginForm');
+const btn  = document.getElementById('submitBtn');
+const errEl= document.getElementById('err');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  errEl.classList.remove('show');
+  btn.disabled = true;
+  btn.textContent = 'جاري الدخول...';
+  try {
+    const r = await fetch('/api/login', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ password: document.getElementById('pw').value }),
+    });
+    const j = await r.json();
+    if (r.ok && j.ok) {
+      location.href = './';
+    } else {
+      errEl.textContent = j.error || 'فشل تسجيل الدخول';
+      errEl.classList.add('show');
+      btn.disabled = false;
+      btn.textContent = 'دخول';
+    }
+  } catch (e) {
+    errEl.textContent = 'تعذّر الاتصال بالخادم: ' + e.message;
+    errEl.classList.add('show');
+    btn.disabled = false;
+    btn.textContent = 'دخول';
+  }
+});
+
+// If already logged in, redirect
+fetch('/api/login').then(r=>r.json()).then(j=>{ if (j.authed) location.href='./'; }).catch(()=>{});
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" role="img" aria-label="Very Smart">
+  <style>
+    .ar  { font-family: 'Tajawal','Cairo',system-ui,sans-serif; font-weight:500; fill:#7BA4D9; }
+    .en  { font-family: 'Poppins',system-ui,sans-serif; font-weight:800; }
+    .tag { font-family: 'Poppins',system-ui,sans-serif; font-weight:400; fill:#7BA4D9; letter-spacing:2px; }
+    .blue   { fill:#1B5FBF; }
+    .orange { fill:#E8842B; }
+  </style>
+
+  <text class="ar" x="555" y="80"  text-anchor="end" font-size="34">مقاولات الكهرباء</text>
+  <text class="ar" x="555" y="120" text-anchor="end" font-size="34">والحلول الذكيـة</text>
+
+  <text class="en blue"   x="55"  y="215" font-size="115">Very</text>
+  <text class="en orange" x="310" y="215" font-size="115">smart</text>
+
+  <g transform="translate(640,80)">
+    <path d="M15 70 L100 5 L185 70 L185 175 L15 175 Z"
+          fill="none" stroke="#1B5FBF" stroke-width="14" stroke-linejoin="round"/>
+    <g fill="none" stroke="#E8842B" stroke-width="6" stroke-linecap="round">
+      <line x1="100" y1="15" x2="100" y2="55"/>
+      <circle cx="100" cy="55" r="10" fill="#E8842B"/>
+      <line x1="40" y1="120" x2="160" y2="120"/>
+      <line x1="60"  y1="120" x2="60"  y2="155"/>
+      <line x1="100" y1="55"  x2="100" y2="120"/>
+      <line x1="140" y1="120" x2="140" y2="155"/>
+      <line x1="40" y1="95"  x2="80"  y2="95"/>
+      <line x1="40" y1="95"  x2="40"  y2="120"/>
+      <line x1="120" y1="95" x2="160" y2="95"/>
+      <line x1="160" y1="95" x2="160" y2="120"/>
+      <circle cx="60"  cy="155" r="6" fill="#E8842B"/>
+      <circle cx="140" cy="155" r="6" fill="#E8842B"/>
+      <circle cx="80"  cy="95"  r="5" fill="#E8842B"/>
+      <circle cx="120" cy="95"  r="5" fill="#E8842B"/>
+      <circle cx="40"  cy="95"  r="5" fill="#E8842B"/>
+      <circle cx="160" cy="95"  r="5" fill="#E8842B"/>
+    </g>
+  </g>
+
+  <line x1="140" y1="280" x2="200" y2="280" stroke="#E8842B" stroke-width="3"/>
+  <text class="tag" x="460" y="288" text-anchor="middle" font-size="22">SMART SOLUTIONS FOR HOMES &amp; TECHNOLOGY</text>
+  <line x1="720" y1="280" x2="780" y2="280" stroke="#E8842B" stroke-width="3"/>
+</svg>

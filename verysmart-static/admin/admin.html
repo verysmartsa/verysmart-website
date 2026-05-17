@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="robots" content="noindex,nofollow" />
+<title>لوحة التحكم · Very Smart</title>
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+<!-- Mobile top bar -->
+<div class="mobile-bar">
+  <img src="../assets/logo.svg" alt="Very Smart" />
+  <button id="mobileToggle" aria-label="menu">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+  </button>
+</div>
+
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+  <div class="brand"><img src="../assets/logo.svg" alt="Very Smart" /></div>
+  <nav id="sideNav">
+    <button class="nav-item active" data-view="dashboard">
+      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+      <span>الرئيسية</span>
+    </button>
+    <button class="nav-item" data-view="brand">
+      <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+      <span>بيانات الشركة</span>
+    </button>
+    <button class="nav-item" data-view="hero">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      <span>القسم الرئيسي</span>
+    </button>
+    <button class="nav-item" data-view="stats">
+      <svg viewBox="0 0 24 24"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+      <span>الأرقام</span>
+    </button>
+    <button class="nav-item" data-view="services">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      <span>الخدمات</span>
+    </button>
+    <button class="nav-item" data-view="features">
+      <svg viewBox="0 0 24 24"><polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/></svg>
+      <span>المميزات</span>
+    </button>
+    <button class="nav-item" data-view="products">
+      <svg viewBox="0 0 24 24"><path d="M16 3h5v5"/><path d="M21 3l-7 7"/><path d="M8 21H3v-5"/><path d="M3 21l7-7"/></svg>
+      <span>المنتجات</span>
+    </button>
+    <button class="nav-item" data-view="projects">
+      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+      <span>المشاريع</span>
+    </button>
+    <button class="nav-item" data-view="why">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/></svg>
+      <span>لماذا نحن</span>
+    </button>
+    <button class="nav-item" data-view="about">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      <span>من نحن</span>
+    </button>
+    <button class="nav-item" data-view="visibility">
+      <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+      <span>إظهار/إخفاء</span>
+    </button>
+  </nav>
+  <div class="nav-bottom">
+    <a href="../" target="_blank" class="nav-item" style="margin-bottom:6px">
+      <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      <span>عرض الموقع</span>
+    </a>
+    <button class="btn-logout" id="logoutBtn">تسجيل الخروج</button>
+  </div>
+</aside>
+
+<!-- Main -->
+<main class="main">
+  <!-- Dashboard view -->
+  <section class="view active" id="view-dashboard">
+    <div class="page-header">
+      <div><h1>مرحباً بك في لوحة التحكم</h1><div class="meta" id="lastUpdated">يجري التحميل...</div></div>
+      <div class="actions">
+        <button class="btn btn-secondary" id="reloadBtn">تحديث</button>
+        <button class="btn btn-primary" id="saveBtn">💾 حفظ كل التغييرات</button>
+      </div>
+    </div>
+    <div class="list-grid" style="grid-template-columns:repeat(auto-fill,minmax(220px,1fr))">
+      <button class="item-card" data-go="brand"><h3>📞 بيانات التواصل</h3><p>الجوال، الإيميل، السوشيال</p></button>
+      <button class="item-card" data-go="hero"><h3>🏠 القسم الرئيسي</h3><p>العنوان، الوصف، الأزرار</p></button>
+      <button class="item-card" data-go="services"><h3>🛠️ الخدمات</h3><p id="cnt-services">— بطاقة</p></button>
+      <button class="item-card" data-go="products"><h3>📦 المنتجات</h3><p id="cnt-products">— منتج</p></button>
+      <button class="item-card" data-go="projects"><h3>🏛️ المشاريع</h3><p id="cnt-projects">— مشروع</p></button>
+      <button class="item-card" data-go="visibility"><h3>👁️ إظهار/إخفاء</h3><p>تحكم في الأقسام المعروضة</p></button>
+    </div>
+  </section>
+
+  <!-- Brand view -->
+  <section class="view" id="view-brand">
+    <div class="page-header"><h1>بيانات الشركة والتواصل</h1>
+      <div class="actions"><button class="btn btn-primary" data-save>💾 حفظ</button></div>
+    </div>
+    <div class="card">
+      <h2>معلومات الاتصال</h2>
+      <div class="row">
+        <div class="field"><label>رقم الجوال</label><input data-path="brand.phone" type="tel" dir="ltr"/></div>
+        <div class="field"><label>رقم واتساب (بدون +)</label><input data-path="brand.whatsapp" type="tel" dir="ltr"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label>البريد الإلكتروني</label><input data-path="brand.email" type="email" dir="ltr"/></div>
+        <div class="field"><label>الدومين</label><input data-path="brand.domain" dir="ltr"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label>Instagram (بدون @)</label><input data-path="brand.instagram" dir="ltr"/></div>
+        <div class="field"><label>TikTok (بدون @)</label><input data-path="brand.tiktok" dir="ltr"/></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>العنوان</h2>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>العنوان بالعربي</label><input data-path="brand.address.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>Address (English)</label><input data-path="brand.address.en"/></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>ساعات العمل</h2>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>عربي</label><input data-path="brand.hours.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>English</label><input data-path="brand.hours.en"/></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero -->
+  <section class="view" id="view-hero">
+    <div class="page-header"><h1>القسم الرئيسي (Hero)</h1>
+      <div class="actions"><button class="btn btn-primary" data-save>💾 حفظ</button></div>
+    </div>
+    <div class="card">
+      <h2>الشارة الصغيرة</h2>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>عربي</label><input data-path="hero.eyebrow.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>English</label><input data-path="hero.eyebrow.en"/></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>العنوان السطر الأول</h2>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>عربي</label><input data-path="hero.title1.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>English</label><input data-path="hero.title1.en"/></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>العنوان السطر الثاني (بلون البرتقالي)</h2>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>عربي</label><input data-path="hero.title2.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>English</label><input data-path="hero.title2.en"/></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>الوصف</h2>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>عربي</label><textarea data-path="hero.desc.ar" rows="3"></textarea></div>
+        <div class="field"><label><span class="lang-tag">EN</span>English</label><textarea data-path="hero.desc.en" rows="3"></textarea></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>زر CTA الأول</h2>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>عربي</label><input data-path="hero.cta1.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>English</label><input data-path="hero.cta1.en"/></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>زر CTA الثاني</h2>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>عربي</label><input data-path="hero.cta2.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>English</label><input data-path="hero.cta2.en"/></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="view" id="view-stats">
+    <div class="page-header"><h1>الأرقام والإحصائيات</h1>
+      <div class="actions">
+        <button class="btn btn-secondary" data-add="stats">➕ إضافة رقم</button>
+        <button class="btn btn-primary" data-save>💾 حفظ</button>
+      </div>
+    </div>
+    <div id="list-stats" class="list-grid"></div>
+  </section>
+
+  <!-- Services -->
+  <section class="view" id="view-services">
+    <div class="page-header"><h1>الخدمات</h1>
+      <div class="actions">
+        <button class="btn btn-secondary" data-add="services">➕ إضافة خدمة</button>
+        <button class="btn btn-primary" data-save>💾 حفظ</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>عنوان القسم</h2>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>الشارة</label><input data-path="sectionTitles.services.tag.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>Tag</label><input data-path="sectionTitles.services.tag.en"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>العنوان الكبير</label><input data-path="sectionTitles.services.title.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>Title</label><input data-path="sectionTitles.services.title.en"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>الوصف</label><textarea data-path="sectionTitles.services.sub.ar" rows="2"></textarea></div>
+        <div class="field"><label><span class="lang-tag">EN</span>Sub</label><textarea data-path="sectionTitles.services.sub.en" rows="2"></textarea></div>
+      </div>
+    </div>
+    <div id="list-services" class="list-grid"></div>
+  </section>
+
+  <!-- Features -->
+  <section class="view" id="view-features">
+    <div class="page-header"><h1>مميزات المنزل الذكي</h1>
+      <div class="actions">
+        <button class="btn btn-secondary" data-add="features">➕ إضافة ميزة</button>
+        <button class="btn btn-primary" data-save>💾 حفظ</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>عنوان القسم</h2>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>الشارة</label><input data-path="sectionTitles.features.tag.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>Tag</label><input data-path="sectionTitles.features.tag.en"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>العنوان الكبير</label><input data-path="sectionTitles.features.title.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>Title</label><input data-path="sectionTitles.features.title.en"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>الوصف</label><textarea data-path="sectionTitles.features.sub.ar" rows="2"></textarea></div>
+        <div class="field"><label><span class="lang-tag">EN</span>Sub</label><textarea data-path="sectionTitles.features.sub.en" rows="2"></textarea></div>
+      </div>
+    </div>
+    <div id="list-features" class="list-grid"></div>
+  </section>
+
+  <!-- Products -->
+  <section class="view" id="view-products">
+    <div class="page-header"><h1>المنتجات</h1>
+      <div class="actions">
+        <button class="btn btn-secondary" data-add="products">➕ إضافة منتج</button>
+        <button class="btn btn-primary" data-save>💾 حفظ</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>عنوان القسم</h2>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>الشارة</label><input data-path="sectionTitles.products.tag.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>Tag</label><input data-path="sectionTitles.products.tag.en"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>العنوان الكبير</label><input data-path="sectionTitles.products.title.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>Title</label><input data-path="sectionTitles.products.title.en"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>الوصف</label><textarea data-path="sectionTitles.products.sub.ar" rows="2"></textarea></div>
+        <div class="field"><label><span class="lang-tag">EN</span>Sub</label><textarea data-path="sectionTitles.products.sub.en" rows="2"></textarea></div>
+      </div>
+    </div>
+    <div id="list-products" class="list-grid"></div>
+  </section>
+
+  <!-- Projects -->
+  <section class="view" id="view-projects">
+    <div class="page-header"><h1>المشاريع</h1>
+      <div class="actions">
+        <button class="btn btn-secondary" data-add="projects">➕ إضافة مشروع</button>
+        <button class="btn btn-primary" data-save>💾 حفظ</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>عنوان القسم</h2>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>الشارة</label><input data-path="sectionTitles.projects.tag.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>Tag</label><input data-path="sectionTitles.projects.tag.en"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>العنوان الكبير</label><input data-path="sectionTitles.projects.title.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>Title</label><input data-path="sectionTitles.projects.title.en"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>الوصف</label><textarea data-path="sectionTitles.projects.sub.ar" rows="2"></textarea></div>
+        <div class="field"><label><span class="lang-tag">EN</span>Sub</label><textarea data-path="sectionTitles.projects.sub.en" rows="2"></textarea></div>
+      </div>
+    </div>
+    <div id="list-projects" class="list-grid"></div>
+  </section>
+
+  <!-- Why -->
+  <section class="view" id="view-why">
+    <div class="page-header"><h1>لماذا تختار Very Smart</h1>
+      <div class="actions">
+        <button class="btn btn-secondary" data-add="why">➕ إضافة سبب</button>
+        <button class="btn btn-primary" data-save>💾 حفظ</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>عنوان القسم</h2>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>الشارة</label><input data-path="sectionTitles.why.tag.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>Tag</label><input data-path="sectionTitles.why.tag.en"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>العنوان الكبير</label><input data-path="sectionTitles.why.title.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>Title</label><input data-path="sectionTitles.why.title.en"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>الوصف</label><input data-path="sectionTitles.why.sub.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>Sub</label><input data-path="sectionTitles.why.sub.en"/></div>
+      </div>
+    </div>
+    <div id="list-why" class="list-grid"></div>
+  </section>
+
+  <!-- About -->
+  <section class="view" id="view-about">
+    <div class="page-header"><h1>من نحن</h1>
+      <div class="actions"><button class="btn btn-primary" data-save>💾 حفظ</button></div>
+    </div>
+    <div class="card">
+      <h2>الشارة + العنوان</h2>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>الشارة</label><input data-path="sectionTitles.about.tag.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>Tag</label><input data-path="sectionTitles.about.tag.en"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>العنوان</label><input data-path="sectionTitles.about.title.ar"/></div>
+        <div class="field"><label><span class="lang-tag">EN</span>Title</label><input data-path="sectionTitles.about.title.en"/></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>الفقرة الأولى</h2>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>عربي</label><textarea data-path="sectionTitles.about.p1.ar" rows="3"></textarea></div>
+        <div class="field"><label><span class="lang-tag">EN</span>English</label><textarea data-path="sectionTitles.about.p1.en" rows="3"></textarea></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>الفقرة الثانية</h2>
+      <div class="row">
+        <div class="field"><label><span class="lang-tag">AR</span>عربي</label><textarea data-path="sectionTitles.about.p2.ar" rows="3"></textarea></div>
+        <div class="field"><label><span class="lang-tag">EN</span>English</label><textarea data-path="sectionTitles.about.p2.en" rows="3"></textarea></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visibility -->
+  <section class="view" id="view-visibility">
+    <div class="page-header"><h1>إظهار / إخفاء الأقسام</h1>
+      <div class="actions"><button class="btn btn-primary" data-save>💾 حفظ</button></div>
+    </div>
+    <div class="card">
+      <h2>تحكم في الأقسام الظاهرة</h2>
+      <div class="desc">أغلق المفتاح لإخفاء القسم من الموقع دون حذفه نهائياً.</div>
+      <div id="visibility-list" style="display:grid;gap:10px"></div>
+    </div>
+  </section>
+</main>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<!-- Item editor modal -->
+<div class="modal-back" id="itemModal">
+  <div class="modal">
+    <div class="modal-head">
+      <h3 id="modalTitle">تعديل</h3>
+      <button class="btn-icon" id="modalClose"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-foot">
+      <button class="btn btn-secondary" id="modalCancel">إلغاء</button>
+      <button class="btn btn-primary" id="modalSave">حفظ في القائمة</button>
+    </div>
+  </div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
