@@ -1,13 +1,3 @@
-# Cloudflare Pages configuration for Very Smart
-# Bind a KV namespace named CONTENT (create from Cloudflare dashboard)
-# Then add ADMIN_PASSWORD as a Secret (Settings → Environment variables → Secrets)
-
-name = "verysmart"
+name = "verysmart-website"
 compatibility_date = "2025-01-01"
 pages_build_output_dir = "."
-
-# After you create the KV namespace, replace the id below:
-# wrangler kv:namespace create CONTENT
-[[kv_namespaces]]
-binding = "CONTENT"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
