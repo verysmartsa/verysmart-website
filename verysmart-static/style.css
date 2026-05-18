@@ -124,7 +124,7 @@ section{padding:var(--section-pad) 0}
 }
 .nav-inner{
   display:flex;align-items:center;justify-content:space-between;
-  padding:8px 20px;max-width:var(--container);margin:0 auto;gap:16px;min-height:140px;
+  padding:4px 20px;max-width:var(--container);margin:0 auto;gap:16px;
 }
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
 .brand img{height:160px;width:auto;display:block}
